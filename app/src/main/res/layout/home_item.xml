@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="336dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentCardHouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/house_bg">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/nameStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="10dp"
+                android:text="@string/templateText"
+                android:background="@color/thirdColor"
+                android:textColor="@color/secondColor"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/numberFlat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/thirdColor"
+                android:padding="10dp"
+                android:text="@string/templateText"
+                android:textColor="@color/secondColor"
+                app:layout_constraintEnd_toStartOf="@+id/square_home"
+                app:layout_constraintStart_toEndOf="@+id/nameStreet"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/square_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="10dp"
+                android:text="@string/templateText"
+                android:background="@color/thirdColor"
+                android:textColor="@color/secondColor"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/floor_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="10dp"
+                android:text="@string/templateText"
+                android:background="@color/thirdColor"
+                android:textColor="@color/secondColor"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sectionRatingHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_rating">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconRatingHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_star_24"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ratingHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iconRatingHome"
+                    android:padding="10dp"
+                    android:text="@string/templateText"
+                    android:textColor="@color/secondColor"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/secondColor"
+                android:textColor="@android:color/black"
+                android:text="@string/select"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</layout>

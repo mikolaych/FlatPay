@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/flats"
+        android:title="@string/menu_flats_name"
+        android:icon="@drawable/flats"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/houses"
+        android:title="@string/menu_houses_name"
+        android:icon="@drawable/house"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/notes"
+        android:title="@string/menu_notes_name"
+        android:icon="@drawable/house"
+        app:showAsAction="ifRoom"/>
+
+
+
+
+
+
+</menu>

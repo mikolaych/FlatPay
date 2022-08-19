@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlatPay</string>
+    <string name="menu_flats_name">Квартиры</string>
+    <string name="menu_houses_name">Дома</string>
+    <string name="menu_calc">Калькулятор</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="templateText">Template text</string>
+    <string name="select">Подробнее</string>
+    <string name="menu_notes_name">Заметки</string>
+</resources>
